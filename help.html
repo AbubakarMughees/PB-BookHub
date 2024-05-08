@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://kit.fontawesome.com/769b6db16b.js" crossorigin="anonymous"></script>
+    <meta name="google-signin-client_id" content="600941120484-j828k8o43kcpnnnoa9jkipgeiimk1n6f.apps.googleusercontent.com">
+    <title>PB BookHub | Help</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <style>    
+        .faq {
+            width: 100vw;
+            height: 98vh;
+          padding: 30px;
+          text-align: center;
+        }
+        @media(max-width:578px){
+            .faq{
+              min-height: 82vh;
+                max-height: fit-content;
+            }
+        }
+        h1 {
+          color: rgb(0, 110, 129);
+        }
+    
+        .question {
+          font-weight: bold;
+          font-size: 18px;
+          color: rgb(0, 110, 129);
+          cursor: pointer;
+          padding: 10px 8px;
+          margin-bottom: 10px;
+        }
+    
+        .answer {
+          display: none;
+          font-size: 16px;
+          color: #222222;
+          margin-top: 10px;
+        }
+      </style>
+      <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const questions = document.querySelectorAll('.question');
+    
+          questions.forEach(function(question) {
+            question.addEventListener('click', function() {
+              const answer = this.nextElementSibling;
+              answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+          });
+        });
+      </script>
+    </head>
+<body>
+  <header>
+    <div class="headerDiv">
+        <a href="index.html"><img src="logo.png" ></a>
+    <!-- header Button list  -->
+    <div class="list">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="contact.html" >Contact Us</a></li>
+            <li><a href="help.html" >Help</a></li>
+        </ul>
+    </div>
+    </div>
+    <!-- for login to google -->
+    <div class="g-sign">
+        <div class="g-signin2" data-onsuccess="onSignIn">Sign In</div>
+    </div>
+</header>
+
+        <!-- Place for FAQs -->
+
+
+        
+  <div class="faq">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="question">How can I download books from this website?</div>
+      <div class="answer">
+        To download books, you need to create an account on our website. Once logged in, browse our collection of books, select the book you want, and click on the download button to start the download.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Can I take quizzes related to the books?</div>
+      <div class="answer">
+        Yes, we offer quizzes for many of the books available on our website. After reading a book, you can access the corresponding quiz and test your knowledge. Quizzes help reinforce your understanding of the book's content.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">What are the benefits of reading books?</div>
+      <div class="answer">
+        Reading books provides numerous benefits, including:
+        <ul>
+          <li>Enhancing knowledge and learning new concepts</li>
+          <li>Improving vocabulary and language skills</li>
+          <li>Boosting creativity and imagination</li>
+          <li>Reducing stress and improving mental health</li>
+          <li>Developing critical thinking and analytical skills</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+    
+
+        <footer class="footer">
+   
+          <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://web.facebook.com/muhammadarslan.mustafa.9" >
+              <i class="fa-brands fa-facebook" style="color: #dbe8ff;"></i>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/marslanmustafa391/" >
+              <i class="fa-brands fa-instagram" style="color: #ffe5f4;"></i>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://arslan-google.netlify.app/" >
+              <i class="fa-brands fa-google" style="color: #fafffa;"></i>
+              </a></li>
+          </ul>
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="contact.html" target="_blank">Contact Us </a></li>
+              <li class="menu__item"><a class="menu__link" href="help.html" target="_blank">Help</a></li>
+              <li class="menu__item"><a class="menu__link" href="https:\\www.biselahore.com" target="_blank">Bise Lahore</a></li> 
+            </ul>
+            <p>&copy;2023 PB BookHub | All Rights Reserved</p>
+          </footer>
+</body>
+<script src="main.js"></script>
+
+</html>
+
+
